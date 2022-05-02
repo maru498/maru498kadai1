@@ -9,18 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var textField1: UITextField!
-    @IBOutlet weak var textField2: UITextField!
-    @IBOutlet weak var textField3: UITextField!
-    @IBOutlet weak var textField4: UITextField!
-    @IBOutlet weak var textField5: UITextField!
+    @IBOutlet private weak var textField1: UITextField!
+    @IBOutlet private weak var textField2: UITextField!
+    @IBOutlet private weak var textField3: UITextField!
+    @IBOutlet private weak var textField4: UITextField!
+    @IBOutlet private weak var textField5: UITextField!
     
-    @IBOutlet weak var label: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet private weak var label: UILabel!
     
     @IBAction func bottom(_ sender: Any) {
         let number1 = Int(textField1.text ?? "") ?? 0
